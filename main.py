@@ -6,7 +6,8 @@ def main():
 
 print(main())
 
-letter_count = count_characters(get_book_text)
+book_text = get_book_text("books/frankenstein.txt")
+letter_count = count_characters(book_text)
 
-for char, count in letter_count.itmes():
-    print(f"{char}': {count}")
+for char, count in letter_count.items():
+    print(f"'{char}': {count}")
