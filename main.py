@@ -8,12 +8,8 @@ def main():
     print("=== DEBUG: Got book text, length:", len(book_text), "===")
     
     print("=== DEBUG: About to count words ===")
-    word_count = get_num_words()
+    word_count = get_num_words(book_text)
     print("=== DEBUG: Got word count:", word_count, "===")
-
-    print("=== DEBUG: About to count characters ===")
-    letter_count = count_characters(book_text)
-    print("=== DEBUG: Got character count ===")
 
     print("=== DEBUG: About to count characters ===")
     word_dict = count_characters(book_text)
