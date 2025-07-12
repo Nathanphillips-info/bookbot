@@ -1,4 +1,4 @@
-from stats import get_num_words, count_characters, get_book_text, create_list, sort_on
+from stats import get_word_count, count_characters, get_book_text, create_list, sort_on
 
 print("START OF SCRIPT")
 
@@ -8,7 +8,7 @@ def main():
     print("=== DEBUG: Got book text, length:", len(book_text), "===")
     
     print("=== DEBUG: About to count words ===")
-    word_count = get_num_words(book_text)
+    word_count = get_word_count(book_text)
     print("=== DEBUG: Got word count:", word_count, "===")
 
     print("=== DEBUG: About to count characters ===")
