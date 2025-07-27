@@ -12,7 +12,7 @@ def main():
     print("=== DEBUG: Got word count:", word_count, "===")
 
     print("=== DEBUG: About to count characters ===")
-    word_dict = count_characters(book_text)
+    word_dict = count_characters()
     print("=== DEBUG: Got character count ===")
 
     print("=== DEBUG: About to create list")
