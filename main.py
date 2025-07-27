@@ -3,6 +3,7 @@ from stats import get_word_count, count_characters, get_book_text, create_list, 
 print("START OF SCRIPT")
 
 def main():
+    path_to_file = "books/frankenstein.txt"
     print("=== DEBUG: About to get book text ===")
     book_text = get_book_text("books/frankenstein.txt")
     print("=== DEBUG: Got book text, length:", len(book_text), "===")
@@ -12,7 +13,7 @@ def main():
     print("=== DEBUG: Got word count:", word_count, "===")
 
     print("=== DEBUG: About to count characters ===")
-    word_dict = count_characters()
+    word_dict = count_characters(path_to_file)
     print("=== DEBUG: Got character count ===")
 
     print("=== DEBUG: About to create list")
